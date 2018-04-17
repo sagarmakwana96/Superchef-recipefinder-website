@@ -1,0 +1,289 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 93%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+div.left-menu{
+    position:fixed;
+    display:block;
+    height:100%;
+    width:300px;
+    background: rgba(230, 230, 230,0.9);
+}
+
+
+/* Nav Menu */
+div.nav-menu {
+	background-color: #333;
+	padding: 0 20px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+#right{
+	float:right;
+}
+
+ul.topnav li a, .dropbtn{
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding:20px 28px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+ul.topnav li a:hover, .dropdown:hover .dropbtn {
+background-color:#ff9900;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.show {display:block;}
+
+.sidenav{
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+	.sidenav {
+		display: block;
+		color:white;
+		background-color: #333;
+		padding: 24px;
+		text-align: center;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	div.nav-menu {
+		display: none;
+	}
+
+	div.left-menu {
+		display: none;
+	}
+
+	div.nav-expanded1 {
+		display: block;
+	}
+
+	div.nav-expanded {
+		display: block;
+	}
+
+	div.nav-menu ul li {
+		float: none;
+		border-bottom: 1px solid black;
+	}
+
+	div.nav-menu ul li:last-child {
+		border-bottom: none;
+	}
+
+        #right{
+	        float:none;
+        }
+
+        .menu-trigger{
+                float:right;
+        }
+
+        .recipe-trigger{
+                float:left;
+        }
+  ul.topnav li img{
+  display :none;
+}
+}
+
+p.sidenav-head{
+padding-left:20%;
+font-size:25px;
+border-bottom: 2px solid #cc0000;
+}
+
+<!--side menu checkbox-->
+/*this is just to organize the demo checkboxes*/
+label {margin-right:20px;}
+
+input[type=checkbox].css-checkbox {
+
+ position:absolute;
+ z-index:-1000;
+ left:-1000px;
+ overflow: hidden;
+ clip: rect(0 0 0 0);
+ height:1px;
+ width:1px;
+ margin:-1px;
+ padding:0;
+ border:0;
+
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+
+ margin:7px;
+ padding-left:25px;
+	
+ height:20px; 
+							
+ display:inline-block;
+							
+ line-height:20px;
+							
+ background-repeat:no-repeat;
+	
+ background-size:20px;						
+ background-position: 0 0;
+							
+ font-size:20px;
+							
+ vertical-align:middle;
+							
+ cursor:pointer;
+
+				
+}
+
+
+						
+input[type=checkbox].css-checkbox:checked + label.css-label {
+
+ background-position: 0 -20px;
+						
+}
+
+						
+label.css-label {
+				
+ background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_5e67f778a4d9b72b5f87ea729418f5ce.png);
+
+ -webkit-touch-callout: none;
+
+ -webkit-user-select: none;
+
+ -khtml-user-select: none;
+
+ -moz-user-select: none;
+	
+ -ms-user-select: none;
+
+ user-select: none;
+			
+}
+
+<!--side menu radio button-->
+ label {margin-right:20px;}
+ input[type=radio].css-checkbox {
+							
+ position:absolute; 
+ z-index:-1000; 
+ left:-1000px; 
+ overflow: hidden; 
+ clip: rect(0 0 0 0); 
+ height:1px; 
+ width:1px; 
+ margin:-1px; 
+ padding:0; 
+ border:0;
+						
+}
+
+						
+
+input[type=radio].css-checkbox + label.css-label1 {
+	
+ margin:7px;						
+ padding-left:25px;
+							
+ height:20px; 
+							
+ display:inline-block;
+							
+ line-height:20px;
+							
+ background-repeat:no-repeat;
+
+ background-size:20px;							
+ background-position: 0 0;
+						
+ font-size:20px;
+							
+ vertical-align:middle;
+							
+ cursor:pointer;
+
+						
+}
+
+
+						
+input[type=radio].css-checkbox:checked + label.css-label1 {
+
+ background-position: 0 -20px;
+						
+}
+
+						
+label.css-label1 {
+				
+ background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_db90a821b8d1c3cc963948854fe8ce92.png);
+				
+ -webkit-touch-callout: none;
+				
+ -webkit-user-select: none;
+				
+ -khtml-user-select: none;
+				
+ -moz-user-select: none;
+				
+ -ms-user-select: none;
+				
+ user-select: none;
+			
+}
+
+}
