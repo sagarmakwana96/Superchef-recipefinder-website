@@ -1,0 +1,394 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <title>SuperChef</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Hover Effect Ideas: Inspiration for subtle hover effects" />
+		<meta name="keywords" content="hover effect, inspiration, grid, thumbnail, transition, subtle, web design" />
+		<meta name="author" content="Codrops" />
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link rel="stylesheet" type="text/css" href="css/modal1.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="demo.css" />
+		<link rel="stylesheet" type="text/css" href="set2.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+   	    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+	    <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="js/jquery-2.0.0.js"></script>
+        <script type="text/javascript" src="script/modal.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+ .abc:hover{
+    /*filter: none;-webkit-filter: grayscale(100%);*/
+ background-color:rgba(0,0,0,1);
+}
+
+
+div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+        height:25%;
+	/* styling bellow */
+	background-color:black;
+
+	color:white;
+	opacity:0.7; /* transparency */
+	filter:alpha(opacity=100); /* IE transparency */
+}
+p.description_content{
+	padding:10px;
+	margin:0px;
+}
+
+</style>
+</head>
+
+<body background="image/ing100.jpg">
+<!--<body style="background-color: #d9d9d9;">-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="sidenav">
+<span class="menu-trigger">Menu</span>
+<span class="recipe-trigger">Recipe</span>
+</div>
+
+<div class="nav-menu">
+<ul class="topnav" id="myTopnav">
+  <li><img src="image/logo2.png" style=" width:170px;height:43px"></li>
+  <li id="right" style="background-color:#cc0000;border-radius:5px;border: 3px solid #262626;"><a href="#" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span>Create Account</a></li>
+  <li id="right"><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  <li id="right"><a href="recipe.html"> <b><span style="font-size:23px;float:left">&#43;</span></b> &#160 Upload Recipe</a></li>
+  <li id="right"><a href="home.html"><img src="image/search.png" style="float:left;width:26px"> &#160 Find Recipe</a></li>
+  <li id="right"><a href="main.html"><img src="image/food2.png" style="float:left;width:30px;height:30px;">&#160 Home</a></li>
+</ul>
+</div>
+
+
+<div class="left-menu" >
+<p class="sidenav-head"><b>Ingredients</b></p>
+<table>
+  <tr><td><input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label">Option 1</label></td>
+  <td><input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label">Option 1</label></td></tr>
+  <tr><td><input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" checked="checked"/><label for="checkboxG3" class="css-label">Option 2</label></td>
+  <td><input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="css-label">Option 1</label></td></tr>
+  <tr><td><input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" /><label for="checkboxG5" class="css-label">Option 1</label></td>
+  <td><input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox" /><label for="checkboxG6" class="css-label">Option 1</label></td></tr>
+</table>
+
+<p class="sidenav-head" style="padding-left:80px;"><b>Cuisine Type</b></p>
+<table>
+  <tr><td><input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label1 radGroup2">Chinese</label></td>
+<td><input type="radio" name="radiog_dark" id="radio7" class="css-checkbox" /><label for="radio7" class="css-label1 radGroup2">French</label></td></tr>
+  <tr><td><input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" /><label for="radio5" class="css-label1 radGroup2">Mexican</label></td>
+<td><input type="radio" name="radiog_dark" id="radio8" class="css-checkbox" /><label for="radio8" class="css-label1 radGroup2">Thai</label></td></tr>
+  <tr><td><input type="radio" name="radiog_dark" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label1 radGroup2">French</label></td>
+<td><input type="radio" name="radiog_dark" id="radio9" class="css-checkbox" /><label for="radio9" class="css-label1 radGroup2">Dessert</label></td></tr>
+</table>
+</div  >
+
+<div class="grid" >
+
+
+					<figure class="effect-kira" >
+						<img src="in3.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in2.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in5.jpg" alt="img05" />
+						<figcaption>
+		                    <h2 style=" text-shadow: 2px 3px 5px black;">Dark Kira</h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in2.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+		                                      <h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+							<h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+							<h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05"/>
+						<figcaption>
+							<h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-kira" >
+						<img src="in4.jpg" alt="img05" />
+						<figcaption>
+							<h2>Dark <span>Kira</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-home"></i></a>
+								<a href="#"><i class="fa fa-fw fa-download"></i></a>
+								<a href="#"><i class="fa fa-fw fa-heart"></i></a>
+								<a href="#"><i class="fa fa-fw fa-share"></i></a>
+							</p>
+						</figcaption>
+					</figure>
+
+				</div>
+
+
+<!--
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog ">
+
+    <Modal content
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#595959">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Log In</h4>
+      </div>
+      <div class="modal-body">
+        <input type="email" name="email" placeholder="Email"><br>
+      <h4>Password:</h4>
+        <input type="password" name="passwrord" placeholder="Password">
+      </div>
+      <div class="modal-footer" style="background-color:#595959">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sign In</button>
+      </div>
+    </div>
+</div>
+</div>
+-->
+<!--
+ Modal
+<div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog ">
+ Modal content-
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#595959">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+      <h4>Email:</h4>
+        <input type="email" name="email" placeholder="email/username"><br>
+      <h4>Password:</h4>
+        <input type="password" name="password" placeholder="password">
+      </div>
+      <div class="modal-footer" style="background-color:#595959">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sign Up</button>
+      </div>
+    </div>
+</div>
+</div>
+-->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+				<h4 class="modal-title" id="myModalLabel" style="color:#1fa67b">Sign Up</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Email">
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user" style="background-color:#1fa67b"></label>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock" style="background-color:#1fa67b"></label>
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+
+				</form>
+
+			</div> <!-- /.modal-body -->
+
+			<div class="modal-footer">
+				<button class="form-control btn btn-primary" style="background-color:#1fa67b">Login</button>
+			</div> <!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+				<h4 class="modal-title" id="myModalLabel" style="color:#1fa67b">Log in</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Login">
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user" style="background-color:#1fa67b"></label>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock" style="background-color:#1fa67b"></label>
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+
+				</form>
+
+			</div> <!-- /.modal-body -->
+
+			<div class="modal-footer">
+				<button class="form-control btn btn-primary" style="background-color:#1fa67b">Login</button>
+			</div> <!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+</html>

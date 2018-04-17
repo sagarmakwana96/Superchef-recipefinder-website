@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add a recipe</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<style type="text/css">
+		label{
+			font-family:Verdana;
+                        font-size:20px;color:#e6e6e6;
+		}
+		body {
+    		padding: 0;
+    		margin: 0;
+    		background-repeat: no-repeat;
+    		background-size:100%  110%;
+    		background-attachment:fixed;
+		}
+	</style>
+</head>
+<body background="image/ing2.jpg">
+<div style="width:70%;height:100vh;margin-top:0vh;margin-left:15%;background-color:rgba(26, 26, 26,0.4)">
+
+<div class="row">
+	<div class="col-xs-3">
+	</div>
+	<div class="col-xs-3">
+	<h1 style="font-family:Verdana;color:#e6e6e6;border-bottom:1px solid">Add a recipe</h1>
+	<br>
+	<form>
+		<label for="title">Title</label><br>
+		<input type="text" name="title" placeholder="title.."><br><br>
+		<label for="title">Cuisine Type</label><br>
+		<input type="text" name="type" ><br><br>
+		<label for="Method">Method</label><br>
+		<textarea rows="20" cols="70" placeholder="Please enter the steps for making recipe.. "></textarea><br>
+		<br>
+		<label for="servings">Number of Servings:</label>
+		&nbsp;&nbsp;
+		<input type="number" name="servings" min="1"><br>
+		<br>
+		<button style="float:right" type="submit" form="form1" value="Submit">Submit</button>
+	</form>
+	</div>
+	<div class="col-xs-4"></div>
+</div>
+
+</div>
+</body>
+</html>
